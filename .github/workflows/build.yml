@@ -9,9 +9,7 @@ jobs:
 
     steps:
       - name: echo github actor
-        run: |
-  	      echo "ABC"
-          echo ${{ github.actor }}
+        run: echo ${{ github.actor }}
 
       - name: Checkout code
         uses: actions/checkout@v2
