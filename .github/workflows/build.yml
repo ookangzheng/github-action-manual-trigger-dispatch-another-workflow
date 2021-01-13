@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: echo github actor
         run: |
-  	  echo "ABC"
+  	      echo "ABC"
           echo ${{ github.actor }}
 
       - name: Checkout code
