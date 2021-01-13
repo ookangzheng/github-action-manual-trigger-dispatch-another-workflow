@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: echo github actor
-        run: pwd && echo ${{ github.actor }}
+        run: ls -lah && echo ${{ github.actor }}
 
       - name: Checkout code
         uses: actions/checkout@v2
