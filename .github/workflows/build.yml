@@ -9,9 +9,12 @@ jobs:
 
     steps:
       - name: echo github actor
-        run: ls -lah && echo ${{ github.actor }}
+        run: echo ${{ github.actor }}
 
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           ref: ${{ github.event.client_payload.branch || 'dev' }}
+
+      - name: Run index.js
+        run: node index.js
