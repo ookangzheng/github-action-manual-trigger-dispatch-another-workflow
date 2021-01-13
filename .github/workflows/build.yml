@@ -2,8 +2,8 @@ name: Build
 
 on:
   repository_dispatch:
-  branches:
-    - dev
+    branches:
+      - dev
 
 jobs:
   build:
