@@ -57,3 +57,16 @@ curl -i -u <GITHUB_USERNAME>:<PERSONAL_ACCESS_TOKEN> --request POST \
   --url 'https://api.github.com/repos/ookangzheng/test-build/dispatches' \
   -d '{"event_type":"trigger", "client_payload": {"branch":"dev"}}'
 ```
+
+## References
+1. https://dev.to/rikurouvila/how-to-trigger-a-github-action-with-an-htt-request-545
+2. https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows#repository_dispatch
+3. https://github.community/t/how-to-trigger-repository-dispatch-event-for-non-default-branch/14470/10
+4. https://github.com/actions-packages-examples/branch-builds
+5. https://dev.to/rikurouvila/how-to-trigger-a-github-action-with-an-htt-request-545
+6. https://github.com/octokit/request-action
+7. https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows#workflow_dispatch
+8. https://github.com/peter-evans/repository-dispatch
+9. https://dev.to/s_abderemane/manual-trigger-with-github-actions-279e
+10. https://github.com/marketplace/actions/auto-approve
+11. 
