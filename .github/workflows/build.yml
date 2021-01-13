@@ -2,8 +2,6 @@ name: Build
 
 on:
   repository_dispatch:
-    branches:
-      - dev
 
 jobs:
   build:
@@ -15,3 +13,5 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+        ref: ${{ github.event.client_payload.branch || 'dev' }}
