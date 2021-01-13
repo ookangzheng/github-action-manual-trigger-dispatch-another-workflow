@@ -14,4 +14,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-        ref: ${{ github.event.client_payload.branch || 'dev' }}
+          ref: ${{ github.event.client_payload.branch || 'dev' }}
